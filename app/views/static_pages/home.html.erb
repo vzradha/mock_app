@@ -1,5 +1,12 @@
 <% provide(:title, "Home") %>
+<div class="center jumbotron">
+	<h1>Welcome to Mock App</h1>
+	<h2>
+		Home page for 
+		<a href="http://localhost:3000">Mock App</a>
+	</h2>
 
-
-<h1>Home page</h1>
-<p>MockApp home page</p>
+	<%= link_to "Sign up Now!", signup_path, class: "btn btn-lg btn-primary" %>
+</div>
+<%= link_to image_tag("rails.png", alt: "Rails Logo"),
+		"http://railstutorials.org/" %>
