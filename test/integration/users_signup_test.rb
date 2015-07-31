@@ -11,6 +11,8 @@ class UsersSignupTest < ActionDispatch::IntegrationTest
 								   password_confirmation: "bar" }
 		end
 		assert_template 'users/new'
+		assert_select '#error_explanation'
+		assert_select '.field_with_errors'
 	end
 
 
@@ -23,5 +25,8 @@ class UsersSignupTest < ActionDispatch::IntegrationTest
 									 password_confirmation: "password123" }
 		end
 	assert_template 'users/show'
+	# nil returns if no flash messages are printed.
+	assert_not flash.nil?
+
 	end
 end
