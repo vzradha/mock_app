@@ -10,6 +10,7 @@ class UsersController < ApplicationController
   def create
   	@user = User.new(user_params)
   	if @user.save
+      log_in @user
       flash[:success] = "Welcome to Mock App!"
   		redirect_to @user
       #or redirect_to user_url(@user)
@@ -18,7 +19,7 @@ class UsersController < ApplicationController
   	end
   end
 
-   #Any methods under private is not publicly accessible
+   #Any methods under private keyword is not publicly accessible
 
    private
 
