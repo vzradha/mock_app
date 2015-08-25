@@ -27,6 +27,13 @@ gem 'bootstrap-sass',  '3.2.0.0'
 # Use ActiveModel has_secure_password
  gem 'bcrypt', '~> 3.1.7'
 
+ # Gem faker for fake users
+ gem 'faker', '1.4.2' 
+
+#Will_paginate gem
+gem 'will_paginate' , '3.0.7'
+gem 'bootstrap-will_paginate', '0.0.10' 
+
 # Use Unicorn as the app server
 # gem 'unicorn'
 
