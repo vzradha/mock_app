@@ -1,0 +1,9 @@
+<h1>Mock App</h1>
+
+<p> Hi <%= @user.name %></p>
+
+<p>
+	Welcome to Mock App! Click on the activation link below:
+</p>
+	<%= link_to "Activate", edit_account_activation_url(@user.activation_token, email: @user.email) %>
+	 
