@@ -20,7 +20,8 @@ class UsersController < ApplicationController
   def create
   	@user = User.new(user_params)
   	if @user.save
-      UserMailer.account_activation(@user).deliver_now
+      #UserMailer.account_activation(@user).deliver_now
+      @user.send_activation_email # refactored  code in user model
       flash[:success] = "Please check your email to activate the account"
   		redirect_to root_url
       
@@ -54,6 +55,8 @@ class UsersController < ApplicationController
 
     
   end
+
+
 
    #Any methods under private keyword is not publicly accessible
 
