@@ -4693,3 +4693,798 @@ Started GET "/assets/application.self-f98a0dd27ad1c55b2b9cfe97296d4887e5d4a4535b
 
 
 Started GET "/assets/rails-c094bc3a4bf50e5bb477109e5cb0d213af27ad75b481c4df249f50974dbeefe6.png" for ::1 at 2015-09-23 09:49:47 +1000
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to AddResetToUsers (20150924010338)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.4ms)[0m  [1mALTER TABLE "users" ADD "reset_digest" varchar[0m
+  [1m[35m (0.1ms)[0m  ALTER TABLE "users" ADD "reset_sent_at" datetime
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20150924010338"]]
+  [1m[35m (0.6ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+
+
+
+Started GET "/password_resets/d8F6OA1FHzh8xRKtcNA8-Q/edit?email=vzradha%40gmail.com" for ::1 at 2015-09-24 12:26:10 +1000
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PasswordResetsController#edit as HTML
+  Parameters: {"email"=>"vzradha@gmail.com", "id"=>"d8F6OA1FHzh8xRKtcNA8-Q"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT 1  [["email", "vzradha@gmail.com"]]
+  Rendered shared/_error_messages.html.erb (1.2ms)
+  Rendered password_resets/edit.html.erb within layouts/application (161.5ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (3.5ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 441ms (Views: 376.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/password_resets/d8F6OA1FHzh8xRKtcNA8-Q/edit?email=vzradha%40gmail.com" for ::1 at 2015-09-24 12:26:22 +1000
+Processing by PasswordResetsController#edit as HTML
+  Parameters: {"email"=>"vzradha@gmail.com", "id"=>"d8F6OA1FHzh8xRKtcNA8-Q"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT 1[0m  [["email", "vzradha@gmail.com"]]
+  Rendered shared/_error_messages.html.erb (0.0ms)
+  Rendered password_resets/edit.html.erb within layouts/application (1.7ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 108ms (Views: 57.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/password_resets/d8F6OA1FHzh8xRKtcNA8-Q/edit?email=vzradha%40gmail.com" for ::1 at 2015-09-24 12:26:49 +1000
+Processing by PasswordResetsController#edit as HTML
+  Parameters: {"email"=>"vzradha@gmail.com", "id"=>"d8F6OA1FHzh8xRKtcNA8-Q"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT 1  [["email", "vzradha@gmail.com"]]
+  Rendered shared/_error_messages.html.erb (0.0ms)
+  Rendered password_resets/edit.html.erb within layouts/application (1.8ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 1059ms (Views: 1008.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/custom.self-d30a832e0c9a0937dea6e6da98de2417a39f23be33c024f0e44759abb10773c2.css?body=1" for ::1 at 2015-09-24 12:26:50 +1000
+
+
+Started GET "/password_resets/d8F6OA1FHzh8xRKtcNA8-Q/edit?email=vzradha%40gmail.com" for ::1 at 2015-09-24 12:30:37 +1000
+Processing by PasswordResetsController#edit as HTML
+  Parameters: {"email"=>"vzradha@gmail.com", "id"=>"d8F6OA1FHzh8xRKtcNA8-Q"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT 1[0m  [["email", "vzradha@gmail.com"]]
+  Rendered shared/_error_messages.html.erb (0.0ms)
+  Rendered password_resets/edit.html.erb within layouts/application (1.4ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 110ms (Views: 59.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/account_activations.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-09-24 12:30:37 +1000
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-09-24 12:30:37 +1000
+
+
+Started GET "/assets/custom.self-f6b714ff39da71e82597ef4ffcac84b39e5bb96e2fef33597e6c897d14912ec7.css?body=1" for ::1 at 2015-09-24 12:30:37 +1000
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-09-24 12:30:37 +1000
+
+
+Started GET "/assets/password_resets.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-09-24 12:30:37 +1000
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-09-24 12:30:37 +1000
+
+
+Started GET "/assets/jquery.self-4c7649dd655c61cb850cfd2e71f937c3bbf3e3a752a3499ed8bb9884473fe1dd.js?body=1" for ::1 at 2015-09-24 12:30:37 +1000
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-09-24 12:30:37 +1000
+
+
+Started GET "/assets/jquery_ujs.self-7551f3212860c6b103730601ff759a4eb7ae7f3469774a48f52d51ba5fd0a0b3.js?body=1" for ::1 at 2015-09-24 12:30:37 +1000
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-09-24 12:30:37 +1000
+
+
+Started GET "/assets/bootstrap.self-cdea7efeac1597b89ddd6fd86b0e8e0bec5d5fb1fac9c6e8a045f2c59eef2d13.js?body=1" for ::1 at 2015-09-24 12:30:37 +1000
+
+
+Started GET "/assets/account_activations.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-09-24 12:30:37 +1000
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-09-24 12:30:37 +1000
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-09-24 12:30:37 +1000
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-09-24 12:30:37 +1000
+
+
+Started GET "/assets/application.self-f98a0dd27ad1c55b2b9cfe97296d4887e5d4a4535b3bbbf9130c1050771738b2.js?body=1" for ::1 at 2015-09-24 12:30:37 +1000
+
+
+Started GET "/assets/password_resets.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-09-24 12:30:37 +1000
+
+
+Started GET "/password_resets/d8F6OA1FHzh8xRKtcNA8-Q/edit?email=vzradha%40gmail.com" for ::1 at 2015-09-24 12:32:31 +1000
+Processing by PasswordResetsController#edit as HTML
+  Parameters: {"email"=>"vzradha@gmail.com", "id"=>"d8F6OA1FHzh8xRKtcNA8-Q"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT 1  [["email", "vzradha@gmail.com"]]
+  Rendered shared/_error_messages.html.erb (0.0ms)
+  Rendered password_resets/edit.html.erb within layouts/application (1.9ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 1172ms (Views: 1121.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/account_activations.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-09-24 12:32:32 +1000
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-09-24 12:32:32 +1000
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-09-24 12:32:32 +1000
+
+
+Started GET "/assets/jquery.self-4c7649dd655c61cb850cfd2e71f937c3bbf3e3a752a3499ed8bb9884473fe1dd.js?body=1" for ::1 at 2015-09-24 12:32:32 +1000
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-09-24 12:32:32 +1000
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-09-24 12:32:32 +1000
+
+
+Started GET "/assets/custom.self-7c445ee9a035884ff2e057fb79ba426bba45dc36ead49f4a3cd8619fda5effd3.css?body=1" for ::1 at 2015-09-24 12:32:32 +1000
+
+
+Started GET "/assets/password_resets.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-09-24 12:32:32 +1000
+
+
+Started GET "/assets/jquery_ujs.self-7551f3212860c6b103730601ff759a4eb7ae7f3469774a48f52d51ba5fd0a0b3.js?body=1" for ::1 at 2015-09-24 12:32:32 +1000
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-09-24 12:32:32 +1000
+
+
+Started GET "/assets/bootstrap.self-cdea7efeac1597b89ddd6fd86b0e8e0bec5d5fb1fac9c6e8a045f2c59eef2d13.js?body=1" for ::1 at 2015-09-24 12:32:32 +1000
+
+
+Started GET "/assets/account_activations.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-09-24 12:32:32 +1000
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-09-24 12:32:32 +1000
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-09-24 12:32:32 +1000
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-09-24 12:32:32 +1000
+
+
+Started GET "/assets/application.self-f98a0dd27ad1c55b2b9cfe97296d4887e5d4a4535b3bbbf9130c1050771738b2.js?body=1" for ::1 at 2015-09-24 12:32:32 +1000
+
+
+Started GET "/assets/password_resets.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-09-24 12:32:32 +1000
+
+
+Started GET "/password_resets/d8F6OA1FHzh8xRKtcNA8-Q/edit?email=vzradha%40gmail.com" for ::1 at 2015-09-24 12:33:09 +1000
+Processing by PasswordResetsController#edit as HTML
+  Parameters: {"email"=>"vzradha@gmail.com", "id"=>"d8F6OA1FHzh8xRKtcNA8-Q"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT 1[0m  [["email", "vzradha@gmail.com"]]
+  Rendered shared/_error_messages.html.erb (0.0ms)
+  Rendered password_resets/edit.html.erb within layouts/application (1.4ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 1122ms (Views: 1072.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/account_activations.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-09-24 12:33:10 +1000
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-09-24 12:33:10 +1000
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-09-24 12:33:10 +1000
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-09-24 12:33:10 +1000
+
+
+Started GET "/assets/password_resets.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-09-24 12:33:10 +1000
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-09-24 12:33:10 +1000
+
+
+Started GET "/assets/jquery.self-4c7649dd655c61cb850cfd2e71f937c3bbf3e3a752a3499ed8bb9884473fe1dd.js?body=1" for ::1 at 2015-09-24 12:33:10 +1000
+
+
+Started GET "/assets/custom.self-45122909bc243cb1072d53733ea0cbbe78d5d02751bf19aa42c54040e2e19217.css?body=1" for ::1 at 2015-09-24 12:33:10 +1000
+
+
+Started GET "/assets/jquery_ujs.self-7551f3212860c6b103730601ff759a4eb7ae7f3469774a48f52d51ba5fd0a0b3.js?body=1" for ::1 at 2015-09-24 12:33:10 +1000
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-09-24 12:33:10 +1000
+
+
+Started GET "/assets/bootstrap.self-cdea7efeac1597b89ddd6fd86b0e8e0bec5d5fb1fac9c6e8a045f2c59eef2d13.js?body=1" for ::1 at 2015-09-24 12:33:10 +1000
+
+
+Started GET "/assets/account_activations.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-09-24 12:33:10 +1000
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-09-24 12:33:10 +1000
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-09-24 12:33:10 +1000
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-09-24 12:33:10 +1000
+
+
+Started GET "/assets/application.self-f98a0dd27ad1c55b2b9cfe97296d4887e5d4a4535b3bbbf9130c1050771738b2.js?body=1" for ::1 at 2015-09-24 12:33:10 +1000
+
+
+Started GET "/assets/password_resets.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-09-24 12:33:10 +1000
+
+
+Started PATCH "/password_resets/d8F6OA1FHzh8xRKtcNA8-Q" for ::1 at 2015-09-24 12:43:46 +1000
+Processing by PasswordResetsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Zf5NIDHPvWQnWKSfVOX+VR80bHtq03CJzQ2+smOsmfq+5BtLpTemqtG3qJCQFO6fLuAbWCv+i0PRz/aSlKmevA==", "email"=>"vzradha@gmail.com", "user"=>{"password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Update Password", "id"=>"d8F6OA1FHzh8xRKtcNA8-Q"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT 1  [["email", "vzradha@gmail.com"]]
+Completed 500 Internal Server Error in 60ms
+
+NoMethodError (undefined method `check_expiration' for #<PasswordResetsController:0x007fb279fb4040>):
+  activesupport (4.2.0.rc3) lib/active_support/callbacks.rb:427:in `block in make_lambda'
+  activesupport (4.2.0.rc3) lib/active_support/callbacks.rb:145:in `call'
+  activesupport (4.2.0.rc3) lib/active_support/callbacks.rb:145:in `block in halting_and_conditional'
+  activesupport (4.2.0.rc3) lib/active_support/callbacks.rb:151:in `call'
+  activesupport (4.2.0.rc3) lib/active_support/callbacks.rb:151:in `block in halting_and_conditional'
+  activesupport (4.2.0.rc3) lib/active_support/callbacks.rb:151:in `call'
+  activesupport (4.2.0.rc3) lib/active_support/callbacks.rb:151:in `block in halting_and_conditional'
+  activesupport (4.2.0.rc3) lib/active_support/callbacks.rb:234:in `call'
+  activesupport (4.2.0.rc3) lib/active_support/callbacks.rb:234:in `block in halting'
+  activesupport (4.2.0.rc3) lib/active_support/callbacks.rb:234:in `call'
+  activesupport (4.2.0.rc3) lib/active_support/callbacks.rb:234:in `block in halting'
+  activesupport (4.2.0.rc3) lib/active_support/callbacks.rb:169:in `call'
+  activesupport (4.2.0.rc3) lib/active_support/callbacks.rb:169:in `block in halting'
+  activesupport (4.2.0.rc3) lib/active_support/callbacks.rb:169:in `call'
+  activesupport (4.2.0.rc3) lib/active_support/callbacks.rb:169:in `block in halting'
+  activesupport (4.2.0.rc3) lib/active_support/callbacks.rb:169:in `call'
+  activesupport (4.2.0.rc3) lib/active_support/callbacks.rb:169:in `block in halting'
+  activesupport (4.2.0.rc3) lib/active_support/callbacks.rb:92:in `call'
+  activesupport (4.2.0.rc3) lib/active_support/callbacks.rb:92:in `_run_callbacks'
+  activesupport (4.2.0.rc3) lib/active_support/callbacks.rb:734:in `_run_process_action_callbacks'
+  activesupport (4.2.0.rc3) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.0.rc3) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.2.0.rc3) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.2.0.rc3) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.2.0.rc3) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.0.rc3) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.0.rc3) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (4.2.0.rc3) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.2.0.rc3) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.2.0.rc3) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.2.0.rc3) lib/abstract_controller/base.rb:137:in `process'
+  actionview (4.2.0.rc3) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.0.rc3) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.2.0.rc3) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.0.rc3) lib/action_controller/metal.rb:236:in `block in action'
+  actionpack (4.2.0.rc3) lib/action_dispatch/routing/route_set.rb:73:in `call'
+  actionpack (4.2.0.rc3) lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+  actionpack (4.2.0.rc3) lib/action_dispatch/routing/route_set.rb:42:in `serve'
+  actionpack (4.2.0.rc3) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.0.rc3) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.0.rc3) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.0.rc3) lib/action_dispatch/routing/route_set.rb:802:in `call'
+  rack (1.6.4) lib/rack/etag.rb:24:in `call'
+  rack (1.6.4) lib/rack/conditionalget.rb:38:in `call'
+  rack (1.6.4) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.0.rc3) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.0.rc3) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.0.rc3) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.0.rc3) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.0.rc3) lib/active_record/connection_adapters/abstract/connection_pool.rb:647:in `call'
+  activerecord (4.2.0.rc3) lib/active_record/migration.rb:378:in `call'
+  actionpack (4.2.0.rc3) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.0.rc3) lib/active_support/callbacks.rb:88:in `call'
+  activesupport (4.2.0.rc3) lib/active_support/callbacks.rb:88:in `_run_callbacks'
+  activesupport (4.2.0.rc3) lib/active_support/callbacks.rb:734:in `_run_call_callbacks'
+  activesupport (4.2.0.rc3) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.0.rc3) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.0.rc3) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.0.rc3) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.0.rc3) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.1.3) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.0.rc3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0.rc3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0.rc3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0.rc3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0.rc3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0.rc3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0.rc3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0.rc3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0.rc3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0.rc3) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0.rc3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0.rc3) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/vzradha/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/vzradha/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/vzradha/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/vzradha/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.0.rc3/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.2ms)
+  Rendered /Users/vzradha/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.0.rc3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /Users/vzradha/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.0.rc3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/vzradha/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.0.rc3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (36.2ms)
+  Rendered /Users/vzradha/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.3/lib/web_console/templates/_markup.html.erb (0.2ms)
+  Rendered /Users/vzradha/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.3/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/vzradha/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.3/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/vzradha/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.3/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/vzradha/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.3/lib/web_console/templates/console.js.erb within layouts/javascript (26.9ms)
+  Rendered /Users/vzradha/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.3/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/vzradha/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.3/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/vzradha/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.3/lib/web_console/templates/index.html.erb (60.0ms)
+
+
+Started GET "/password_resets/d8F6OA1FHzh8xRKtcNA8-Q" for ::1 at 2015-09-24 12:46:30 +1000
+
+ActionController::RoutingError (No route matches [GET] "/password_resets/d8F6OA1FHzh8xRKtcNA8-Q"):
+  actionpack (4.2.0.rc3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.1.3) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.0.rc3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0.rc3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0.rc3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0.rc3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0.rc3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0.rc3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0.rc3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0.rc3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0.rc3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0.rc3) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0.rc3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0.rc3) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/vzradha/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/vzradha/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/vzradha/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/vzradha/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.0.rc3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (14.3ms)
+  Rendered /Users/vzradha/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.0.rc3/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.3ms)
+  Rendered /Users/vzradha/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.0.rc3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.9ms)
+  Rendered /Users/vzradha/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.0.rc3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/vzradha/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.0.rc3/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (59.6ms)
+  Rendered /Users/vzradha/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.3/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/vzradha/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.3/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/vzradha/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.3/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/vzradha/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.3/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/vzradha/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.3/lib/web_console/templates/console.js.erb within layouts/javascript (26.2ms)
+  Rendered /Users/vzradha/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.3/lib/web_console/templates/main.js.erb within layouts/javascript (0.1ms)
+  Rendered /Users/vzradha/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.3/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/vzradha/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.3/lib/web_console/templates/index.html.erb (57.1ms)
+
+
+Started PATCH "/password_resets/d8F6OA1FHzh8xRKtcNA8-Q" for ::1 at 2015-09-24 12:46:39 +1000
+Processing by PasswordResetsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Zf5NIDHPvWQnWKSfVOX+VR80bHtq03CJzQ2+smOsmfq+5BtLpTemqtG3qJCQFO6fLuAbWCv+i0PRz/aSlKmevA==", "email"=>"vzradha@gmail.com", "user"=>{"password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Update Password", "id"=>"d8F6OA1FHzh8xRKtcNA8-Q"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT 1[0m  [["email", "vzradha@gmail.com"]]
+Completed 500 Internal Server Error in 58ms
+
+NoMethodError (undefined method `password_reset_expired?' for #<User:0x007fb281c57d40>):
+  app/controllers/password_resets_controller.rb:59:in `check_expiration'
+
+
+  Rendered /Users/vzradha/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.0.rc3/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.1ms)
+  Rendered /Users/vzradha/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.0.rc3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /Users/vzradha/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.0.rc3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /Users/vzradha/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.0.rc3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (32.7ms)
+  Rendered /Users/vzradha/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.3/lib/web_console/templates/_markup.html.erb (0.2ms)
+  Rendered /Users/vzradha/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.3/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/vzradha/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.3/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/vzradha/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.3/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.1ms)
+  Rendered /Users/vzradha/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.3/lib/web_console/templates/console.js.erb within layouts/javascript (26.6ms)
+  Rendered /Users/vzradha/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.3/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/vzradha/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.3/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/vzradha/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.3/lib/web_console/templates/index.html.erb (59.4ms)
+
+
+Started GET "/password_resets/d8F6OA1FHzh8xRKtcNA8-Q" for ::1 at 2015-09-24 12:47:01 +1000
+
+ActionController::RoutingError (No route matches [GET] "/password_resets/d8F6OA1FHzh8xRKtcNA8-Q"):
+  actionpack (4.2.0.rc3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.1.3) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.0.rc3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0.rc3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0.rc3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0.rc3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0.rc3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0.rc3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0.rc3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0.rc3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0.rc3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0.rc3) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0.rc3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0.rc3) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/vzradha/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/vzradha/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/vzradha/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/vzradha/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.0.rc3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Users/vzradha/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.0.rc3/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.9ms)
+  Rendered /Users/vzradha/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.0.rc3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (0.7ms)
+  Rendered /Users/vzradha/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.0.rc3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/vzradha/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.0.rc3/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (42.2ms)
+  Rendered /Users/vzradha/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.3/lib/web_console/templates/_markup.html.erb (0.2ms)
+  Rendered /Users/vzradha/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.3/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/vzradha/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.3/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/vzradha/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.3/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/vzradha/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.3/lib/web_console/templates/console.js.erb within layouts/javascript (25.9ms)
+  Rendered /Users/vzradha/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.3/lib/web_console/templates/main.js.erb within layouts/javascript (0.1ms)
+  Rendered /Users/vzradha/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.3/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/vzradha/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.3/lib/web_console/templates/index.html.erb (56.3ms)
+
+
+Started PATCH "/password_resets/d8F6OA1FHzh8xRKtcNA8-Q" for ::1 at 2015-09-24 12:47:10 +1000
+Processing by PasswordResetsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Zf5NIDHPvWQnWKSfVOX+VR80bHtq03CJzQ2+smOsmfq+5BtLpTemqtG3qJCQFO6fLuAbWCv+i0PRz/aSlKmevA==", "email"=>"vzradha@gmail.com", "user"=>{"password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Update Password", "id"=>"d8F6OA1FHzh8xRKtcNA8-Q"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT 1  [["email", "vzradha@gmail.com"]]
+Completed 500 Internal Server Error in 57ms
+
+NoMethodError (undefined method `password_reset_expired?' for #<User:0x007fb27e4a1a18>):
+  app/controllers/password_resets_controller.rb:59:in `check_expiration'
+
+
+  Rendered /Users/vzradha/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.0.rc3/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.1ms)
+  Rendered /Users/vzradha/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.0.rc3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /Users/vzradha/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.0.rc3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /Users/vzradha/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.0.rc3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (32.3ms)
+  Rendered /Users/vzradha/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.3/lib/web_console/templates/_markup.html.erb (0.2ms)
+  Rendered /Users/vzradha/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.3/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/vzradha/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.3/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.1ms)
+  Rendered /Users/vzradha/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.3/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/vzradha/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.3/lib/web_console/templates/console.js.erb within layouts/javascript (25.8ms)
+  Rendered /Users/vzradha/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.3/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/vzradha/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.3/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/vzradha/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.3/lib/web_console/templates/index.html.erb (57.6ms)
+
+
+Started PATCH "/password_resets/d8F6OA1FHzh8xRKtcNA8-Q" for ::1 at 2015-09-24 12:48:17 +1000
+Processing by PasswordResetsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Zf5NIDHPvWQnWKSfVOX+VR80bHtq03CJzQ2+smOsmfq+5BtLpTemqtG3qJCQFO6fLuAbWCv+i0PRz/aSlKmevA==", "email"=>"vzradha@gmail.com", "user"=>{"password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Update Password", "id"=>"d8F6OA1FHzh8xRKtcNA8-Q"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT 1[0m  [["email", "vzradha@gmail.com"]]
+Completed 500 Internal Server Error in 57ms
+
+NoMethodError (undefined method `password_reset_expired?' for #<User:0x007fb279c98c58>):
+  app/controllers/password_resets_controller.rb:59:in `check_expiration'
+
+
+  Rendered /Users/vzradha/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.0.rc3/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.0ms)
+  Rendered /Users/vzradha/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.0.rc3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /Users/vzradha/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.0.rc3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /Users/vzradha/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.0.rc3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (32.1ms)
+  Rendered /Users/vzradha/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.3/lib/web_console/templates/_markup.html.erb (0.2ms)
+  Rendered /Users/vzradha/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.3/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/vzradha/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.3/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.1ms)
+  Rendered /Users/vzradha/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.3/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.1ms)
+  Rendered /Users/vzradha/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.3/lib/web_console/templates/console.js.erb within layouts/javascript (26.1ms)
+  Rendered /Users/vzradha/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.3/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/vzradha/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.3/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/vzradha/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.3/lib/web_console/templates/index.html.erb (57.3ms)
+
+
+Started PATCH "/password_resets/d8F6OA1FHzh8xRKtcNA8-Q" for ::1 at 2015-09-24 12:50:38 +1000
+Processing by PasswordResetsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Zf5NIDHPvWQnWKSfVOX+VR80bHtq03CJzQ2+smOsmfq+5BtLpTemqtG3qJCQFO6fLuAbWCv+i0PRz/aSlKmevA==", "email"=>"vzradha@gmail.com", "user"=>{"password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Update Password", "id"=>"d8F6OA1FHzh8xRKtcNA8-Q"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT 1  [["email", "vzradha@gmail.com"]]
+Completed 500 Internal Server Error in 55ms
+
+NoMethodError (undefined method `password_reset_expired?' for #<User:0x007fb2856c7d18>):
+  app/controllers/password_resets_controller.rb:59:in `check_expiration'
+
+
+  Rendered /Users/vzradha/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.0.rc3/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.0ms)
+  Rendered /Users/vzradha/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.0.rc3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /Users/vzradha/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.0.rc3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /Users/vzradha/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.0.rc3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (31.8ms)
+  Rendered /Users/vzradha/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.3/lib/web_console/templates/_markup.html.erb (0.2ms)
+  Rendered /Users/vzradha/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.3/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/vzradha/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.3/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.1ms)
+  Rendered /Users/vzradha/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.3/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/vzradha/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.3/lib/web_console/templates/console.js.erb within layouts/javascript (25.9ms)
+  Rendered /Users/vzradha/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.3/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/vzradha/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.3/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/vzradha/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.3/lib/web_console/templates/index.html.erb (57.0ms)
+
+
+Started POST "/password_resets/console/repl_sessions/46d9d49836b6cb911df82377e2a2f7d0/trace" for ::1 at 2015-09-24 12:51:07 +1000
+
+
+Started GET "/" for ::1 at 2015-09-24 12:51:44 +1000
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (2.7ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 50ms (Views: 49.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for ::1 at 2015-09-24 12:51:45 +1000
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (11.5ms)
+  Rendered layouts/_shim.html.erb (0.2ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 61ms (Views: 60.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/password_resets/new" for ::1 at 2015-09-24 12:51:47 +1000
+Processing by PasswordResetsController#new as HTML
+  Rendered password_resets/new.html.erb within layouts/application (0.9ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 59ms (Views: 58.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/password_resets" for ::1 at 2015-09-24 12:51:53 +1000
+Processing by PasswordResetsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"EGFyhnNU1dMiNmXzBISKzs6KAXOr07gKogLoyzJX+1LLeyTt56zOHdTZafzAdZoE/152UOr+Q8C+wKDrxVL8FA==", "password_reset"=>"[FILTERED]", "commit"=>"Submit"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT 1[0m  [["email", "vzradha@gmail.com"]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "users" SET "reset_digest" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["reset_digest", "$2a$10$/ohvD9Ka3D.zrtnWTBEz5.bWLydEpqrKioa3Lyqfm/JW5CEloIOl2"], ["updated_at", "2015-09-24 02:51:53.416115"], ["id", 101]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.1ms)[0m  UPDATE "users" SET "reset_sent_at" = ?, "updated_at" = ? WHERE "users"."id" = ?  [["reset_sent_at", "2015-09-24 02:51:53.418395"], ["updated_at", "2015-09-24 02:51:53.418721"], ["id", 101]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  Rendered user_mailer/password_reset.html.erb within layouts/mailer (0.6ms)
+  Rendered user_mailer/password_reset.text.erb within layouts/mailer (0.4ms)
+
+UserMailer#password_reset: processed outbound mail in 124.4ms
+
+Sent mail to vzradha@gmail.com (5.9ms)
+Date: Thu, 24 Sep 2015 12:51:53 +1000
+From: noreply@example.com
+To: vzradha@gmail.com
+Message-ID: <56036549884d2_2d0e3fd9407d75f413848@popmac.mail>
+Subject: Password Reset
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_5603654987210_2d0e3fd9407d75f41372c";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5603654987210_2d0e3fd9407d75f41372c
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+To reset your password click the link below:
+
+http://localhost:3000/password_resets/gf8u9wm43Wz-HcObC55Gog/edit?email=vzradha%40gmail.com
+
+This link will expire in two hours
+
+If you did not request the password reset, please ignore and your password will remain the same
+
+----==_mimepart_5603654987210_2d0e3fd9407d75f41372c
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<html>
+  <body>
+    <h1>Password Reset</h1>
+
+<p>To reset your password, click link below: </p>
+  <a href="http://localhost:3000/password_resets/gf8u9wm43Wz-HcObC55Gog/edit.vzradha@gmail.com">Reset Password</a>
+
+  <p>This link will expire in two hours</p>
+
+  <p>If you did not request the password reset, please ignore and your password will remain the same</p>
+
+  </body>
+</html>
+
+----==_mimepart_5603654987210_2d0e3fd9407d75f41372c--
+
+Redirected to http://localhost:3000/
+Completed 302 Found in 199ms (ActiveRecord: 2.1ms)
+
+
+Started GET "/" for ::1 at 2015-09-24 12:51:53 +1000
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 43ms (Views: 42.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/password_resets/gf8u9wm43Wz-HcObC55Gog/edit?email=vzradha%40gmail.com" for ::1 at 2015-09-24 12:52:23 +1000
+Processing by PasswordResetsController#edit as HTML
+  Parameters: {"email"=>"vzradha@gmail.com", "id"=>"gf8u9wm43Wz-HcObC55Gog"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT 1  [["email", "vzradha@gmail.com"]]
+Completed 500 Internal Server Error in 51ms
+
+NoMethodError (undefined method `password_reset_expired?' for #<User:0x007fb27e4c82f8>):
+  app/controllers/password_resets_controller.rb:59:in `check_expiration'
+
+
+  Rendered /Users/vzradha/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.0.rc3/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.6ms)
+  Rendered /Users/vzradha/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.0.rc3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /Users/vzradha/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.0.rc3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.5ms)
+  Rendered /Users/vzradha/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.0.rc3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (30.7ms)
+  Rendered /Users/vzradha/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.3/lib/web_console/templates/_markup.html.erb (0.2ms)
+  Rendered /Users/vzradha/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.3/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.1ms)
+  Rendered /Users/vzradha/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.3/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.1ms)
+  Rendered /Users/vzradha/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.3/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.1ms)
+  Rendered /Users/vzradha/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.3/lib/web_console/templates/console.js.erb within layouts/javascript (25.5ms)
+  Rendered /Users/vzradha/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.3/lib/web_console/templates/main.js.erb within layouts/javascript (0.1ms)
+  Rendered /Users/vzradha/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.3/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/vzradha/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.3/lib/web_console/templates/index.html.erb (56.4ms)
+
+
+Started GET "/login" for ::1 at 2015-09-24 12:53:07 +1000
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (0.7ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 52ms (Views: 51.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/password_resets/gf8u9wm43Wz-HcObC55Gog/edit?email=vzradha%40gmail.com" for ::1 at 2015-09-24 12:53:13 +1000
+Processing by PasswordResetsController#edit as HTML
+  Parameters: {"email"=>"vzradha@gmail.com", "id"=>"gf8u9wm43Wz-HcObC55Gog"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT 1[0m  [["email", "vzradha@gmail.com"]]
+Completed 500 Internal Server Error in 50ms
+
+NoMethodError (undefined method `password_reset_expired?' for #<User:0x007fb283bb5fc0>):
+  app/controllers/password_resets_controller.rb:59:in `check_expiration'
+
+
+  Rendered /Users/vzradha/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.0.rc3/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.0ms)
+  Rendered /Users/vzradha/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.0.rc3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /Users/vzradha/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.0.rc3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /Users/vzradha/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.0.rc3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (31.0ms)
+  Rendered /Users/vzradha/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.3/lib/web_console/templates/_markup.html.erb (0.2ms)
+  Rendered /Users/vzradha/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.3/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.1ms)
+  Rendered /Users/vzradha/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.3/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/vzradha/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.3/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.1ms)
+  Rendered /Users/vzradha/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.3/lib/web_console/templates/console.js.erb within layouts/javascript (25.1ms)
+  Rendered /Users/vzradha/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.3/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/vzradha/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.3/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/vzradha/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.3/lib/web_console/templates/index.html.erb (55.5ms)
+
+
+Started GET "/password_resets/gf8u9wm43Wz-HcObC55Gog/edit?email=vzradha%40gmail.com" for ::1 at 2015-09-24 12:55:48 +1000
+Processing by PasswordResetsController#edit as HTML
+  Parameters: {"email"=>"vzradha@gmail.com", "id"=>"gf8u9wm43Wz-HcObC55Gog"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT 1  [["email", "vzradha@gmail.com"]]
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered password_resets/edit.html.erb within layouts/application (1.7ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 101ms (Views: 46.1ms | ActiveRecord: 0.4ms)
+
+
+Started PATCH "/password_resets/gf8u9wm43Wz-HcObC55Gog" for ::1 at 2015-09-24 12:55:54 +1000
+Processing by PasswordResetsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/9z+F6VCDMdx7+QjxvQWhRbXMYIU9W79x77kMX1iUl0kxqh8MboXCYcA6CwCBQZPJwNGoVXYlTfbfKwRimdVGw==", "email"=>"vzradha@gmail.com", "user"=>{"password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Update Password", "id"=>"gf8u9wm43Wz-HcObC55Gog"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT 1[0m  [["email", "vzradha@gmail.com"]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE (LOWER("users"."email") = LOWER('vzradha@gmail.com') AND "users"."id" != 101) LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  Rendered shared/_error_messages.html.erb (0.3ms)
+  Rendered password_resets/edit.html.erb within layouts/application (1.6ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 167ms (Views: 46.3ms | ActiveRecord: 0.3ms)
+
+
+Started PATCH "/password_resets/gf8u9wm43Wz-HcObC55Gog" for ::1 at 2015-09-24 12:56:24 +1000
+Processing by PasswordResetsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"mQu8/P/0U9zHoqzMnvbEOnBC4F/M541FzCuGm3FBzVNCEeqXawxIEjFNoMNaB9TwQZaXfI3Kdo/Q6c67hkTKFQ==", "email"=>"vzradha@gmail.com", "user"=>{"password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Update Password", "id"=>"gf8u9wm43Wz-HcObC55Gog"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT 1[0m  [["email", "vzradha@gmail.com"]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE (LOWER("users"."email") = LOWER('vzradha@gmail.com') AND "users"."id" != 101) LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  Rendered shared/_error_messages.html.erb (0.3ms)
+  Rendered password_resets/edit.html.erb within layouts/application (1.8ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 161ms (Views: 46.8ms | ActiveRecord: 0.7ms)
+
+
+Started PATCH "/password_resets/gf8u9wm43Wz-HcObC55Gog" for ::1 at 2015-09-24 12:57:00 +1000
+Processing by PasswordResetsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"kIpI8pADOUnkxTl3P4PB0EDdPEAyrgFwws5hFpKHS2RLkB6ZBPsihxIqNXj7ctEacQlLY3OD+rreDCk2ZYJMIg==", "email"=>"vzradha@gmail.com", "user"=>{"password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Update Password", "id"=>"gf8u9wm43Wz-HcObC55Gog"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT 1[0m  [["email", "vzradha@gmail.com"]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE (LOWER("users"."email") = LOWER('vzradha@gmail.com') AND "users"."id" != 101) LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "users" SET "password_digest" = ?, "updated_at" = ? WHERE "users"."id" = ?  [["password_digest", "$2a$10$lqGJN5up8SRA25Lh8ScEmOrEWQNQuE0XdGthrNkP295c7Sg8vxUXO"], ["updated_at", "2015-09-24 02:57:00.272145"], ["id", 101]]
+  [1m[36m (8.4ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/users/101
+Completed 302 Found in 121ms (ActiveRecord: 9.3ms)
+
+
+Started GET "/users/101" for ::1 at 2015-09-24 12:57:00 +1000
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"101"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 101]]
+  Rendered users/show.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 101]]
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 48ms (Views: 46.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2015-09-24 14:39:55 +1000
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (2.0ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 101]]
+  Rendered layouts/_header.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 65ms (Views: 64.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/login" for ::1 at 2015-09-24 14:39:56 +1000
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (1.3ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 101]]
+  Rendered layouts/_header.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 54ms (Views: 53.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for ::1 at 2015-09-24 14:39:57 +1000
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (0.9ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 101]]
+  Rendered layouts/_header.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 60ms (Views: 59.5ms | ActiveRecord: 0.1ms)
