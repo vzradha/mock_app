@@ -21,7 +21,7 @@ class UsersController < ApplicationController
   	@user = User.new(user_params)
   	if @user.save
       #UserMailer.account_activation(@user).deliver_now
-      @user.send_activation_email # refactored  code in user model
+      @user.send_activation_email # refactored  code in user modelzom
       flash[:success] = "Please check your email to activate the account"
   		redirect_to root_url
       
