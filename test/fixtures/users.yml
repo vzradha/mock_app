@@ -1,5 +1,5 @@
 valli:
-  name: valli Example
+  name: valli Example 
   email: valli@valli.com
   password_digest: <%=User.digest('password') %>
   admin: true

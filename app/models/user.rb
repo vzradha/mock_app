@@ -70,7 +70,13 @@ class User < ActiveRecord::Base
 	def password_reset_expired?
 		reset_sent_at < 2.hours.ago
 	end
-
+	
+	#Define proto-feed
+	#Feed on users profile page and following users, uses the where method
+	#? escapes id to avoid sql injection
+	def feed
+		Micropost.where("user_id = ?", id)
+	end
 
 	private 
 
