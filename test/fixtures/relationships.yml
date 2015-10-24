@@ -1,0 +1,6 @@
+one:
+ follower: valli
+ followed: pattu
+two:
+ follower: pattu
+ followed: valli
